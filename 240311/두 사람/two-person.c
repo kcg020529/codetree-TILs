@@ -8,7 +8,7 @@ int main() {
     scanf("%d %c", &a, &c);
     scanf("%d %c", &b, &d);
 
-    if ((a>18 || b>18) && c=='M')
+    if ((a>18 || b>18) && (c=='M' || d=='M'))
         printf("1");
     else
         printf("0");
