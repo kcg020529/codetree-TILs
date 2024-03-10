@@ -10,6 +10,8 @@ int main() {
             printf("100000");
         else if (b>=90)
             printf("50000");
+        else
+            printf("0");
     }
     else
         printf("0");
