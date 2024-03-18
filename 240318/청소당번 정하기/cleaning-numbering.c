@@ -6,7 +6,7 @@ int main() {
 
     scanf("%d", &n);
 
-    for(int i=i;i<=n;i++){
+    for(int i=1;i<=n;i++){
 
         if(i%12==0)
             cnt12++;
