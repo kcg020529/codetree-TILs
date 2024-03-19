@@ -10,11 +10,12 @@ int main() {
         int a;
         scanf("%d", &a);
 
-        if(a>=0 && a<=200)
+        if(a>=0 && a<=200){
             sum+=a;
             cnt+=1;
         }
-    avg = (double)sum / (cnt-3);
+    }
+    avg = (double)sum / cnt;
     printf("%d %.1lf", sum, avg);
     
     return 0;
