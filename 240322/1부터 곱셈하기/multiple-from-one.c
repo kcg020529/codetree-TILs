@@ -6,12 +6,12 @@ int main() {
     scanf("%d", &n);
 
     for(int i=1; i<=10;i++){
+        a*=i;
         if(a>=n){
-            printf("%d", i-1);
+            printf("%d", i);
             break;
         }
-        else
-            a*=i;
+
     }
     return 0;
 }
