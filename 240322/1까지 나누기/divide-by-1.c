@@ -11,7 +11,8 @@ int main() {
             printf("%d", i);
             break;
         }
-        i++;
+        else
+            i++;
     }
 
     return 0;
