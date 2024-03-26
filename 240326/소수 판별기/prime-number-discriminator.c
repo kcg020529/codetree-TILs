@@ -12,7 +12,11 @@ int main() {
             satisfied = false;
         }
     }
-    (satisfied = true) ? printf("P") : printf("C");
+    //(satisfied = false) ? printf("C") : printf("P");
+    if(satisfied == true)
+		printf("P");
+	else
+		printf("C");
     
     return 0;
 }
