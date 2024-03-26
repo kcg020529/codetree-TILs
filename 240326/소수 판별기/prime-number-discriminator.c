@@ -12,11 +12,8 @@ int main() {
             satisfied = false;
         }
     }
-    //(satisfied = false) ? printf("C") : printf("P");
-    if(satisfied == true)
-		printf("P");
-	else
-		printf("C");
+    (satisfied == false) ? printf("C") : printf("P");
+    
     
     return 0;
 }
