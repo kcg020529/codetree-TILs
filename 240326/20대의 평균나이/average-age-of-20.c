@@ -7,7 +7,7 @@ int main() {
     
     while(1){
         scanf("%d", &n);
-        if(n>=30)
+        if(n>=30 || n<20)
             break;
         avg+=n;
         cnt++;
