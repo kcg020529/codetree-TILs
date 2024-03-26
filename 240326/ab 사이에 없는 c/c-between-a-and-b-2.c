@@ -9,10 +9,10 @@ int main() {
     bool satisfied = true;
 
     for(int i = a; i <= b; i++){
-        if(a%c==0 || b%c==0){
+        if(a%c==0 || b%c==0)
             satisfied = false;
-            break;
-        }
+        if(c%a==0 || c%b==0)
+            satisfied = false;
     }
 
     if(satisfied == false)
