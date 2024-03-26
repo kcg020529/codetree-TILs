@@ -2,22 +2,17 @@
 #include <stdbool.h>
 
 int main() {
-	// 변수 선언 및 입력
-	int n;
-	scanf("%d", &n);
-	bool satisfied = true;
-	
-	for(int i = 2; i < n; i++) {
-		// 1과 자기자신을 제외한 약수가 전혀 없다면 그 수는 소수입니다.
-		if(n % i == 0)
-			satisfied = false;
-	}
+    int n;
+    scanf("%d", &n);
+    
+    bool satisfied = true;
 
-	//출력
-	if(satisfied == true)
-		printf("P");
-	else
-		printf("C");
-	
+    for(int i = 2; i < n; i++) {
+        if(n%i==0){
+            satisfied = false;
+        }
+    }
+    (satisfied = false) ? printf("C") : printf("P");
+    
     return 0;
 }
