@@ -13,8 +13,11 @@ int main() {
             break;
         }
     }
-    (satisfied = false) ? printf("C") : printf("P");
-    
+    //(satisfied = false) ? printf("C") : printf("P");
+    if(satisfied = false)
+        printf("C");
+    else
+        printf("P");
 
     return 0;
 }
