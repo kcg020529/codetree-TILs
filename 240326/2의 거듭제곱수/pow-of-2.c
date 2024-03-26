@@ -6,11 +6,10 @@ int main() {
     scanf("%d", &n);
 
     while(1){
-        n /= 2;
-        cnt++;
-
         if(n==2)
             break;
+        n /= 2;
+        cnt++;
     }
     printf("%d", cnt);
 
