@@ -11,8 +11,6 @@ int main() {
     for(int i = a; i <= b; i++){
         if(a%c==0 || b%c==0)
             satisfied = false;
-        if(c%a==0 || c%b==0)
-            satisfied = false;
     }
 
     if(satisfied == false)
