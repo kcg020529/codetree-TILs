@@ -1,19 +1,23 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     
     int n;
     scanf("%d", &n);
-    int a = n-1;
+
+    bool hap = false;
     
-    for(int i=2;i<=a;i++){
-        if(n%i==0){
-            printf("C");
-            break;
-        }
-        else
-            continue;
+    for(int i=2;i<=n-1;i++){
+        if(n%i==0)
+            hap = true;
     }
+
+    if(hap == true)
+        printf("C");
+    else
+        printf("N");
+    
 
     return 0;
 }
