@@ -19,7 +19,7 @@ int main() {
     else if(avg>=3.0)
         printf("%.1lf\nGood", avg);
     else
-        printf("Poor");
+        printf("%.1lf\nPoor", avg);
 
 
 
