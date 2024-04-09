@@ -10,12 +10,13 @@ int main() {
    for(int i = 2; i<100; i++){
         
         arr[i] = arr[0]+arr[i-1];
-        
-        if(arr[i]%5==0) b++;
-
         printf("%d ", arr[i]);
-        if(b==2) break;
 
+        if(arr[i]%5==0){
+            b++;
+            if(b==2)
+                break;
+        } 
    }
     return 0;
 }
