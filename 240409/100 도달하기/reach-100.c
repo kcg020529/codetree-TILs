@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &n);
     printf("%d %d ", a[0] = 1, a[1] = n);
 
-    for(int i = 2; i < 100 i++){
+    for(int i = 2; i < 100; i++){
         a[i] = a[i-1] + a[i-2];
         printf("%d ", a[i]);
 
