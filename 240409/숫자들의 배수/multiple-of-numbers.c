@@ -3,20 +3,22 @@
 
 int main() {
     
-   int n, b=0; int arr[MAX];
-   scanf("%d", &n);
+   int n; int arr[MAX];
+   scanf("%d", &arr[0]);
 
-   printf("%d %d ", arr[0] = n, arr[1] = n + n);
-   for(int i = 2; i<100; i++){
-        
-        arr[i] = arr[0]+arr[i-1];
+    for(int i = 1; i < 100; i++){
+        arr[i] = arr[i-1] + arr[0];
+    }
+
+    n = 0;
+    for(int i = 0; i < 100; i++){
         printf("%d ", arr[i]);
+        if(arr[i]%5 == 0)
+            n++;
+        if(n ==2)
+            break;
+    }
 
-        if(arr[i]%5==0){
-            b++;
-            if(b==2)
-                break;
-        } 
-   }
+
     return 0;
 }
