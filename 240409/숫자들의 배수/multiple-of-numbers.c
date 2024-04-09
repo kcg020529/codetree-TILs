@@ -8,12 +8,14 @@ int main() {
 
    printf("%d %d ", arr[0] = n, arr[1] = n + n);
    for(int i = 2; i<100; i++){
-        if(b==2)
-           break;
+        
         arr[i] = arr[0]+arr[i-1];
+        
+        if(arr[i]%5==0) b++;
+
         printf("%d ", arr[i]);
-        if(arr[i]%5==0)
-            b++;
+        if(b==2) break;
+
    }
     return 0;
 }
