@@ -2,19 +2,22 @@
 
 int main() {
     
-    char a[6] = {'L', 'E', 'B', 'R', 'O', 'S'};
+    char word[6] = { 'L', 'E', 'B', 'R', 'O', 'S' };
 
-    char A;
-    scanf(" %c", &A);
+    char a;
+    scanf("%c", &a);
 
-    int cnt = 0;
-    for(int i = 0; i<6; i++){
-        if(a[i] == A);
-            cnt = i;
-            break;
+    int idx = -1;
+
+    for(int i = 0; i < 6; i++){
+        if(word[i] == a)
+            idx = i;
     }
-    printf("%d", cnt);
-
-
+    
+    if(idx == -1)
+		printf("None");
+	else
+		printf("%d", idx);
+    
     return 0;
 }
