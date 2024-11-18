@@ -16,11 +16,11 @@ int main() {
 
 int SmallestNum(int a, int b, int c)
 {
-    int min_val = 0;
-    if(a >= b && c >= b) min_val = b;
-    else if(a >= b && c >= a) min_val = a;
-    else if ( b >= a && c >= a) min_val = a;
-    else min_val = c;
+    int min_val = a;
+    if(a > b)
+        min_val = b;
+    if(min_val > c)
+        min_val = c;
 
     return min_val;
 }
